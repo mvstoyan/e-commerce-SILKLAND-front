@@ -254,9 +254,6 @@ h2 {
 .faq {
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
-  background-image: url(https://cdn.glitch.me/762561de-e4d0-4591-b57a-4fd1777cf6be%2Fcover-faq.jpg?v=1639241895454);
-  background-size: cover;
 }
 
 .faq-container {
@@ -264,93 +261,46 @@ h2 {
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  background-color: rgba(229,220,195,0.8);
-  width: 1000px;
-  padding: 5px 60px 50px 60px;
-  margin: 50px 0 60px;
+  background-color: rgba(28, 28, 28, 0.201);
+  padding: 30px;
+  margin: 30px;
 }
-.faq-heading {
-  font-family: 'Gilroy-Medium', sans-serif;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 45px;
-  margin-bottom: 0;
-}
-.span {
-  font-family: 'Gilroy-Medium', sans-serif;
-  text-transform: none;
-  font-weight: bold;
-  font-size: 45px;
-  margin-bottom: 0;
-}
-.faq-middle {
-    text-align: center;
-    font-family: 'Gilroy-Medium', sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 18px;
-    width: 760px;
-    margin: 45px 0;
-}
+
 .faq-title {
-    font-family: 'Gilroy-Medium', sans-serif;
+   display: flex;
+   justify-content: center;
     font-size: 19px;
-    padding: 10px 20px;
+    padding: 10px;
     cursor: pointer;
-    background-color: #A18D51;
+    background-color: #e8e8e6;
+    border: none;
+    margin-bottom: 7px;
+    width: 900px;
 }
 .faq-title:hover {
     box-shadow: 0 0 0 5px rgba(70, 61, 35, 0.3);
 }
-.faq-title:focus {
-    outline: none;
-}
-.faq-item > .faq-title {
-    list-style: none;
-}
-.faq-item > .faq-title::-webkit-details-marker {
-    display: none;
-}
-.faq-item {
-    margin-bottom: 7px;
-    width: 900px;
-}
+
 .faq-text {
     text-decoration: none;
-    font-family: 'Gilroy-Medium', sans-serif;
     font-size: 18px;
     padding-left: 30px;
     padding-right: 20px;
 }
-.faq-links {
-    text-decoration: none;
-    font-family: 'Gilroy-Medium', sans-serif;
-    font-size: 19px;
-    color: black;
-}
-.faq-links:hover {
-    color: #A18D51;
-}
-.more {
-    text-decoration: none;
-    margin-top: 40px;
-    color: black;
-}
-.btnmore {
-    text-transform: uppercase;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+
+.faq-btn {
     color: black;
     font-size: 30px;
     padding: 10px 70px 5px;
     border-right: none;
     border-left: none;
-    border-top: 3px solid #A18D51;
-    border-bottom: 3px solid #A18D51;
+    border-top: 3px solid #181714;
+    border-bottom: 3px solid #151410;
     background-color: rgba(229,220,195,0);
 }
-.btnmore:hover {
+.faq-btn:hover {
     cursor: pointer;
-    background-color: #A18D51;
+    background-color: #5c5c59;
     transition-duration: 0.5s;
 }
 

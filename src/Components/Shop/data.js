@@ -256,7 +256,16 @@ export const data = [
   showMore:false,
   category: "abstract"
 },
-
+{
+  id: 21,
+  name: "Beige Red",
+  description: "Beige red silk dress for women, prom silk kimono dress sleeves,gift for her,sexy luxury silk dress,Cocktail birthday,wedding bridesmaid robe",
+  price: 590,
+  image: ['/content/image/abstractRed/abstractRed0.png', 
+  '/content/image/abstractRed/abstractRed1.png'],
+  showMore:false,
+  category: "abstract"
+}
 ]
 
 export default data;
