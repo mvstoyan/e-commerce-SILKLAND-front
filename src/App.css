@@ -1,0 +1,356 @@
+body {
+  background: #ffffff;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/*NAVBAR*/
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.link {
+  display: flex;
+  text-decoration: none;
+  color: #0e0705;
+  text-transform: uppercase;
+  padding: 10px;
+  font-size: 18px;
+  margin-left: 50px;
+}
+
+.link:hover {
+  color: #d2beb0;
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.bag {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+/*
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+*/
+
+/*SILKLAND PAGE*/
+.SILKLAND {
+  width: 100%;
+  height: 100vh;
+}
+
+h3 {
+  text-align: center;
+}
+
+.collections {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.collectionFloral, .collectionAbstract {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.floralSakura0, .abstractYellow0 {
+  width: 400px;
+}
+
+.btn {
+  font-size: 18px;
+  color: #d2beb0;
+  text-align: center;
+  width: 150px;
+  padding: 10px 20px;
+  border: 1px solid rgba(138, 134, 134, 0.795);
+}
+
+.btn:hover {
+  background-color: rgba(132, 119, 119, 0.717);
+  border: none;
+}
+
+/*Footer(App.js) - Contacts - ContactForm*/
+.footer {
+  font-size: 12px;
+  color: #0e0705;
+  font-weight: 300;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.footerLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px 20px;
+  border-left: 1px solid grey;
+}
+
+.footerLink {
+  color: #0e0705;
+  padding: 8px 20px;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  font-size: 14px;
+}
+
+.form {
+  width: 100%;
+  height: 60vh;
+}
+
+.footerInput{
+  color: #0e0705;
+  border: none;
+  padding: 6px 0;
+  font-size: 14px;
+}
+
+.footerInput::placeholder{
+  color: grey;
+  font-size: 14px;
+}
+
+.footerBtn{
+  background: transparent;
+  border: none;
+  color : grey;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.inputPlace {   
+  display: flex;
+  align-items: flex-start;  
+}
+
+.footerLinks i {
+  animation-name: blink;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  opacity: 1;
+  font-size: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  }
+  
+.footerLinks input:focus + i {
+  display: none;
+}
+
+.line {
+  display: flex;
+  flex-direction: row;
+}
+
+.inputContact {
+  padding: 10px;
+  margin: 10px;
+}
+
+@keyframes blink {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+/*FILTERS*/
+.filters{
+  background-color: #0000000b;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/*SHOP*/
+.cards-container {
+  border: green 1px solid;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid blue;
+  width: 300px;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+.sliderDress {
+  width: 280px;
+  height: 410px;
+}
+
+.sliderDress:hover {
+  animation: sliderDress-scale infinite 4s linear;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes sliderDress-scale {
+  from {
+  transform:scale(1.2);
+  -ms-transform:scale(1.2);
+  -moz-transform:scale(1.2); 
+  -webkit-transform:scale(1.2);
+  -o-transform:scale(1.2);
+    }
+  to {
+  transform:scale(1.0);
+  -ms-transform:scale(1.0);
+  -moz-transform:scale(1.0); 
+  -webkit-transform:scale(1.0);
+  -o-transform:scale(1.0);
+    }
+}
+
+/*ABOUT*/
+.faq {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  background-image: url(https://cdn.glitch.me/762561de-e4d0-4591-b57a-4fd1777cf6be%2Fcover-faq.jpg?v=1639241895454);
+  background-size: cover;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgba(229,220,195,0.8);
+  width: 1000px;
+  padding: 5px 60px 50px 60px;
+  margin: 50px 0 60px;
+}
+.faq-heading {
+  font-family: 'Gilroy-Medium', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 45px;
+  margin-bottom: 0;
+}
+.span {
+  font-family: 'Gilroy-Medium', sans-serif;
+  text-transform: none;
+  font-weight: bold;
+  font-size: 45px;
+  margin-bottom: 0;
+}
+.faq-middle {
+    text-align: center;
+    font-family: 'Gilroy-Medium', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    width: 760px;
+    margin: 45px 0;
+}
+.faq-title {
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 19px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #A18D51;
+}
+.faq-title:hover {
+    box-shadow: 0 0 0 5px rgba(70, 61, 35, 0.3);
+}
+.faq-title:focus {
+    outline: none;
+}
+.faq-item > .faq-title {
+    list-style: none;
+}
+.faq-item > .faq-title::-webkit-details-marker {
+    display: none;
+}
+.faq-item {
+    margin-bottom: 7px;
+    width: 900px;
+}
+.faq-text {
+    text-decoration: none;
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 18px;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+.faq-links {
+    text-decoration: none;
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 19px;
+    color: black;
+}
+.faq-links:hover {
+    color: #A18D51;
+}
+.more {
+    text-decoration: none;
+    margin-top: 40px;
+    color: black;
+}
+.btnmore {
+    text-transform: uppercase;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: black;
+    font-size: 30px;
+    padding: 10px 70px 5px;
+    border-right: none;
+    border-left: none;
+    border-top: 3px solid #A18D51;
+    border-bottom: 3px solid #A18D51;
+    background-color: rgba(229,220,195,0);
+}
+.btnmore:hover {
+    cursor: pointer;
+    background-color: #A18D51;
+    transition-duration: 0.5s;
+}
+
