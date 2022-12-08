@@ -45,7 +45,7 @@ function About() {
           <label className="about" htmlFor="message">Your message: </label>
             <textarea className="inputContact" id="message" name="message"/>
               <ValidationError prefix="Message" field="message" errors={state.errors}/>
-        <button className="btn" type="submit" disabled={state.submitting}>Send</button>
+        <button className="footerBtn" type="submit" disabled={state.submitting}>Send</button>
         </form> 
             </div> : ""}
             </div>

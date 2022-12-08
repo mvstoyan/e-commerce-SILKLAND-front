@@ -330,7 +330,7 @@ body {
       border: 0.5px solid #e8e8e6;
       background-color: white;
       margin-bottom: 7px;
-      width: 100vh;
+      width: 650px;
       color: #676765;
   }
   .faq-title:hover {
@@ -339,19 +339,19 @@ body {
   
   .faq-text {
       text-decoration: none;
-      font-size: 18px;
+      font-size: 15px;
       padding-left: 30px;
       padding-right: 20px;
   }
   
   .faq-btn {
-      color: #9c9c9a;
-      font-size: 25px;
-      padding: 10px 70px 5px;
-      border-right: none;
-      border-left: none;
-      border-top: 1px solid #9c9c9a;
-      border-bottom: 1px solid #9c9c9a;
+    color: #9c9c9a;
+    font-size: 25px;
+    padding: 10px 70px 5px;
+    border-right: none;
+    border-left: none;
+    border-top: 1px solid #9c9c9a;
+    border-bottom: 1px solid #9c9c9a;
     padding: 3px;
     margin-top: 20px;
     background-color: transparent;
