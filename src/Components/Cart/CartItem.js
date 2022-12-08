@@ -9,7 +9,7 @@ const dispatch = useDispatch();
     return (
     <div>
         <div className="cartItem">
-        <img src={dresses.image[0]} alt="dress" width="100px"/>
+        <img className="cartImage" src={dresses.image[0]} alt="dress"/>
             <div className="aboutItem">
                 <h4>{dresses.name}</h4>
                 <p>Price: ${dresses.price}</p>

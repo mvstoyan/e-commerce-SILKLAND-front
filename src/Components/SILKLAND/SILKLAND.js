@@ -5,15 +5,8 @@ function SILKLAND() {
 
     return (
       <div className="SILKLAND">
-        
-          <div className="collectionFloral">
             <img className="floral" src="./content/image/floralWhiteBlack/floralWhiteBlack0.png" alt="floral"/>
-          </div>
-
-          <div className="collectionAbstract">
             <Link to="/shop"><button className="btn">shop now</button></Link>
-          </div>
-
       </div>
         /*
       <div className="two">
