@@ -21,7 +21,7 @@ function About() {
             <p className='faq-text'>Territories, but please allow up to 30 days for delivery.</p>
             </div> : ""}
 
-            <button className="faq-title" onClick={() => setShowMore(!showMore)}>Deescription</button>
+            <button className="faq-title" onClick={() => setShowMore(!showMore)}>Description</button>
             {showMore ? <div> <p className='faq-text'>You are looking at silk kimono dress with sakura flowers print.</p>
             <p className='faq-text'>This dress is good for daytime events and night parties.</p> 
             <p className="faq-text">It is easy to moderate using accessories, jewelry, makeup,</p>

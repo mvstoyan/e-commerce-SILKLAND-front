@@ -73,6 +73,7 @@ body {
 
   .btn {
     border: 0.5px solid #e8e8e6;
+    color: #676765;
     padding: 3px;
     background-color: transparent;
     text-align: center;
@@ -123,7 +124,7 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     padding: 0px 20px;
-    border-left: 1px solid #d2beb0;
+    border-left: 1px solid #e8e8e6;
   }
   
   .footerLink {
@@ -205,6 +206,7 @@ body {
   .categoryButton {
     border: 0.5px solid #e8e8e6;
     padding: 3px;
+    color: #676765;
     background-color: transparent;
     width: 70px;
     margin: 10px;
@@ -267,6 +269,7 @@ body {
   .showMore {
     border: none;
     background-color: transparent;
+    color: #676765;
   }
 
   .showMore:hover {
@@ -293,6 +296,7 @@ body {
   .btnAdd {
     border: 0.5px solid #e8e8e6;
     padding: 3px;
+    color: #676765;
     background-color: transparent;
   }
 
