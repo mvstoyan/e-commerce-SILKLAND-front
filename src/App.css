@@ -1,306 +1,420 @@
 body {
-  background: #ffffff;
-  width: 100%;
-  height: 100vh;
-  padding: 0;
-  margin: 0;
-}
-
-.App {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
-/*NAVBAR*/
-.navbar {
-  display: flex;
-  justify-content: center;
-  background-color: #ffffff;
-}
-
-.link {
-  display: flex;
-  text-decoration: none;
-  color: #0e0705;
-  text-transform: uppercase;
-  padding: 10px;
-  font-size: 18px;
-  margin-left: 50px;
-}
-
-.link:hover {
-  color: #d2beb0;
-  transform: scale(1.1);
-  transition: 1s;
-}
-
-.bag {
-  margin-left: auto;
-  margin-right: 20px;
-}
-
-/*
-video {
-    object-fit: cover;
-    width: 100vw;
+    background: #ffffff;
+    width: 100%;
     height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-*/
-
-/*SILKLAND PAGE*/
-.SILKLAND {
-  width: 100%;
-  height: 100vh;
-}
-
-h3 {
-  text-align: center;
-}
-
-.collections {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.collectionFloral, .collectionAbstract {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-h2 {
-  font-size: 20px;
-}
-
-.floralSakura0, .abstractYellow0 {
-  width: 400px;
-}
-
-.btn {
-  font-size: 18px;
-  color: #d2beb0;
-  text-align: center;
-  width: 150px;
-  padding: 10px 20px;
-  border: 1px solid rgba(138, 134, 134, 0.795);
-}
-
-.btn:hover {
-  background-color: rgba(132, 119, 119, 0.717);
-  border: none;
-}
-
-/*Footer(App.js) - Contacts - ContactForm*/
-.footer {
-  font-size: 12px;
-  color: #0e0705;
-  font-weight: 300;
-  text-decoration: none;
-  padding: 5px;
-}
-
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding: 20px;
-}
-
-.footerLinks {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 0px 20px;
-  border-left: 1px solid grey;
-}
-
-.footerLink {
-  color: #0e0705;
-  padding: 8px 20px;
-  text-decoration: none;
-  background: transparent;
-  border: none;
-  font-size: 14px;
-}
-
-.form {
-  width: 100%;
-  height: 60vh;
-}
-
-.footerInput{
-  color: #0e0705;
-  border: none;
-  padding: 6px 0;
-  font-size: 14px;
-}
-
-.footerInput::placeholder{
-  color: grey;
-  font-size: 14px;
-}
-
-.footerBtn{
-  background: transparent;
-  border: none;
-  color : grey;
-  cursor: pointer;
-  font-size: 14px;
-}
-
-.inputPlace {   
-  display: flex;
-  align-items: flex-start;  
-}
-
-.footerLinks i {
-  animation-name: blink;
-  animation-duration: 1000ms;
-  animation-iteration-count: infinite;
-  opacity: 1;
-  font-size: 20px;
-  font-family: 'Ubuntu', sans-serif;
-  font-style: normal;
+    padding: 0;
+    margin: 0;
   }
   
-.footerLinks input:focus + i {
-  display: none;
-}
-
-.line {
-  display: flex;
-  flex-direction: row;
-}
-
-.inputContact {
-  padding: 10px;
-  margin: 10px;
-}
-
-@keyframes blink {
-  from { opacity: 1; }
-  to { opacity: 0; }
-}
-
-/*FILTERS*/
-.filters{
-  background-color: #0000000b;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding: 5px;
-  text-align: center;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-/*SHOP*/
-.cards-container {
-  border: green 1px solid;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.cards {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid blue;
-  width: 300px;
-  align-items: center;
-  padding: 20px;
-  margin: 20px;
-}
-
-.sliderDress {
-  width: 280px;
-  height: 410px;
-}
-
-.sliderDress:hover {
-  animation: sliderDress-scale infinite 4s linear;
-  animation-direction: alternate-reverse;
-}
-
-@keyframes sliderDress-scale {
-  from {
-  transform:scale(1.2);
-  -ms-transform:scale(1.2);
-  -moz-transform:scale(1.2); 
-  -webkit-transform:scale(1.2);
-  -o-transform:scale(1.2);
-    }
-  to {
-  transform:scale(1.0);
-  -ms-transform:scale(1.0);
-  -moz-transform:scale(1.0); 
-  -webkit-transform:scale(1.0);
-  -o-transform:scale(1.0);
-    }
-}
-
-/*ABOUT*/
-.faq {
-  display: flex;
-  justify-content: center;
-}
-
-.faq-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-  background-color: rgba(28, 28, 28, 0.201);
-  padding: 30px;
-  margin: 30px;
-}
-
-.faq-title {
-   display: flex;
-   justify-content: center;
-    font-size: 19px;
-    padding: 10px;
-    cursor: pointer;
-    background-color: #e8e8e6;
-    border: none;
-    margin-bottom: 7px;
-    width: 900px;
-}
-.faq-title:hover {
-    box-shadow: 0 0 0 5px rgba(70, 61, 35, 0.3);
-}
-
-.faq-text {
+  .App {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  /*NAVBAR*/
+  .navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+  }
+  
+  .link {
+    display: flex;
     text-decoration: none;
+    color: #0e0705;
+    text-transform: uppercase;
+    padding: 10px;
     font-size: 18px;
-    padding-left: 30px;
-    padding-right: 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 50px;
+    font-family: 'Alexandria', sans-serif;
+  }
+  
+  .link:hover {
+    color: #d2beb0;
+    transform: scale(1.1);
+    transition: 1s;
+  }
+  
+  .bag {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+  
+  /*
+  video {
+      object-fit: cover;
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+  }
+  */
+  
+  /*SILKLAND PAGE*/
+  .SILKLAND {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+   
+  .collectionFloral { 
+    width: 600px;
+    margin-left: 30px;
 }
 
-.faq-btn {
-    color: black;
-    font-size: 30px;
-    padding: 10px 70px 5px;
-    border-right: none;
-    border-left: none;
-    border-top: 3px solid #181714;
-    border-bottom: 3px solid #151410;
-    background-color: rgba(229,220,195,0);
-}
-.faq-btn:hover {
+.floral {
+    width: 400px;
+  }
+
+  .btn {
+    border: 0.5px solid #e8e8e6;
+    padding: 3px;
+    background-color: transparent;
+    text-align: center;
+    width: 150px;
+    padding: 10px 20px;
+    margin-right: 100px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .btn:hover {
+    background-color: #e8e8e6;
+  }
+
+  h3 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  h2 {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  p, h4 {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /*Footer(App.js) - Contacts - ContactForm*/
+  .footer {
+    font-size: 12px;
+    color: #0e0705;
+    font-weight: 300;
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+  }
+  
+  .footerLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px 20px;
+    border-left: 1px solid #d2beb0;
+  }
+  
+  .footerLink {
+    color: #0e0705;
+    padding: 8px 20px;
+    text-decoration: none;
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .form {
+    width: 100%;
+    height: 60vh;
+  }
+  
+  .footerInput{
+    color: #0e0705;
+    border: none;
+    padding: 6px 0;
+    font-size: 14px;
+  }
+  
+  .footerInput::placeholder{
+    color: grey;
+    font-size: 14px;
+  }
+  
+  .footerBtn{
+    background: transparent;
+    border: none;
+    color : #d2beb0;
     cursor: pointer;
-    background-color: #5c5c59;
-    transition-duration: 0.5s;
+    font-size: 14px;
+  }
+  
+  .inputPlace {   
+    display: flex;
+    align-items: flex-start;  
+  }
+  
+  .footerLinks i {
+    animation-name: blink;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    opacity: 1;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    }
+    
+  .footerLinks input:focus + i {
+    display: none;
+  }
+  
+  .line {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .inputContact {
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  @keyframes blink {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+  
+  /*FILTERS*/
+  .filters{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .categoryButton {
+    border: 0.5px solid #e8e8e6;
+    padding: 3px;
+    background-color: transparent;
+    width: 70px;
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .categoryButton:hover {
+    background-color: #e8e8e66c;
+  }
+  
+  /*SHOP*/
+  .cards-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .cards {
+    border: 0.5px solid #e8e8e6;
+    padding: 3px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 330px;
+    height: 550px;
+  }
+
+  .slider {
+    width: 300px;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .cardDress {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 380px;
+  }
+  
+  .sliderDress {
+    width: 250px;
+  }
+ 
+  .btnSlider {
+    background-color: transparent;
+    border: none;
+  }
+
+  .btnSlider:hover {
+    background-color: #e8e8e66c;
+  }
+
+  .showMore {
+    border: none;
+    background-color: transparent;
+  }
+
+  .showMore:hover {
+    background-color: #e8e8e66c;
+  }
+
+  .showText {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+  }
+
+  .price {
+    width: 90%;
+    height: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  .btnAdd {
+    border: 0.5px solid #e8e8e6;
+    padding: 3px;
+    background-color: transparent;
+  }
+
+  .btnAdd:hover {
+    background-color: #e8e8e6;
+  }
+  
+  /*ABOUT*/
+  .faq {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .faq-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #e8e8e66c;
+    padding: 30px;
+    margin: 30px;
+  }
+  
+  .faq-title {
+     display: flex;
+     justify-content: center;
+      font-size: 19px;
+      padding: 10px;
+      cursor: pointer;
+      border: 0.5px solid #e8e8e6;
+      background-color: white;
+      margin-bottom: 7px;
+      width: 100vh;
+      color: #676765;
+  }
+  .faq-title:hover {
+      box-shadow: 0 0 0 2px rgba(71, 68, 57, 0.3);
+  }
+  
+  .faq-text {
+      text-decoration: none;
+      font-size: 18px;
+      padding-left: 30px;
+      padding-right: 20px;
+  }
+  
+  .faq-btn {
+      color: #9c9c9a;
+      font-size: 25px;
+      padding: 10px 70px 5px;
+      border-right: none;
+      border-left: none;
+      border-top: 1px solid #9c9c9a;
+      border-bottom: 1px solid #9c9c9a;
+    padding: 3px;
+    margin-top: 20px;
+    background-color: transparent;
+  }
+  .faq-btn:hover {
+      cursor: pointer;
+      transition-duration: 0.5s;
+      background-color: #e8e8e6;
+  }
+  
+/*CART*/
+.cart {
+    width: 100%;
+    height: 100vh;
 }
 
+.btnEtsy {
+    background-color: rgba(250, 118, 47, 0.185);
+    border: none;
+    width: 100px;
+}
+
+.btnEtsy:hover {
+    background-color: rgba(250, 118, 47, 0.651);
+}
+
+.btnZelly {
+    background-color: rgba(149, 80, 209, 0.185);
+    border: none;
+    width: 100px;
+}
+
+.btnZelly:hover {
+    background-color: rgba(149, 80, 209, 0.651);
+}
+
+.cartItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.aboutItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+
+.quantity {
+    border: 1px solid #9c9c9a;
+    background-color: transparent;
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+}
+
+.quantity:hover {
+    background-color: #9c9c9a;
+}
+
+.aboutTotal {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

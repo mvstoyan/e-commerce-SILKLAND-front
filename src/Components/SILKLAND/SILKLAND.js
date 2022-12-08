@@ -1,19 +1,19 @@
+
+import { Link } from "react-router-dom";
+
 function SILKLAND() {
 
     return (
       <div className="SILKLAND">
-        <div className="collections">
+        
           <div className="collectionFloral">
-            <img className="floralSakura0" src="./content/image/floralSakura/floralSakura0.png" alt="floralSakura0"/>
-            <h2>FLORAL COLLECTION</h2>
-            <button className="btn">shop now</button>
+            <img className="floral" src="./content/image/floralWhiteBlack/floralWhiteBlack0.png" alt="floral"/>
           </div>
+
           <div className="collectionAbstract">
-            <img className="abstractYellow0" src="./content/image/abstractYellow/abstractYellow0.png" alt="abstractYellow0"/>
-            <h2>ABSTRACT COLLECTION</h2>
-            <button className="btn">shop now</button>
+            <Link to="/shop"><button className="btn">shop now</button></Link>
           </div>
-        </div>
+
       </div>
         /*
       <div className="two">

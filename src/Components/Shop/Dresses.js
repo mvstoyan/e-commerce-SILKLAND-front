@@ -9,7 +9,7 @@ const Dresses = () => {
     return (
     <div className="cards-container">
         {data.filter(dress => {
-            if (selectedCategory === 'All') return true;
+            if (selectedCategory === 'all') return true;
             return selectedCategory === dress.category;
         })
         .map(dress => <Dress key={dress.id} dress={dress} />)}

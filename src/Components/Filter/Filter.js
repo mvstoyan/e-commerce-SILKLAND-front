@@ -7,7 +7,7 @@ const dispatch = useDispatch();
 
     return (
         <div className="filters">
-            {['floral', 'abstract', 'All'].map(category =>
+            {['floral', 'abstract', 'all'].map(category =>
                 <div key={category.toString()}>
                     <button onClick={() => {dispatch(filterCategory(category))}} className={selectedCategory === category ? 'categoryButtonSelected categoryButton' : 'categoryButton' }>{category}</button>
                 </div>
