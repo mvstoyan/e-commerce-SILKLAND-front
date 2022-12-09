@@ -6,7 +6,7 @@ function SILKLAND() {
     return (
       <div className="SILKLAND">
             <img className="floral" src="./content/image/floralWhiteBlack/floralWhiteBlack0.png" alt="floral"/>
-            <Link to="/shop"><button className="btn">shop now</button></Link>
+            <Link to="/Shop"><button className="btn">shop now</button></Link>
       </div>
         /*
       <div className="two">
