@@ -5,7 +5,7 @@ function SILKLAND() {
 
     return (
       <div className="SILKLAND">
-            <img className="floral" src="./content/image/floralWhiteBlack/floralWhiteBlack0.png" alt="floral"/>
+            <img className="floral" src="https://drive.google.com/uc?id=1kYLw1tFsn76ieG3V32csf3470vbOaHIX" alt="floral"/>
             <Link to="/Shop"><button className="btn">shop now</button></Link>
       </div>
         /*
