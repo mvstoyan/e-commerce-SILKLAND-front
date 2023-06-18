@@ -1,6 +1,6 @@
 
 import Dresses from '../../Components/Shop/Dresses';
-import Filter from '../Filter/Filter';
+import Filter from './Filter';
 
 function Shop() {
   return (

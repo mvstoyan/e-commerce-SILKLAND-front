@@ -15,6 +15,8 @@ const [showMore, setShowMore] = useState(false);
     dispatch(getTotals());
       }, [cart, dispatch]);
 
+      
+
   return (<div className="cart">
     <h4>Your Cart</h4>
       {cart.cartItems.length === 0 ? (
@@ -23,6 +25,10 @@ const [showMore, setShowMore] = useState(false);
         </div>
           ) : (<div>
          
+
+        
+
+
             
             <div>
           {cartItems.map(cartItem => <CartItem  key={cartItem.id} cartItem={cartItem} />)}
