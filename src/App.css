@@ -221,12 +221,13 @@ body {
   }
   
   /*SHOP*/
-  .cards-container {
+  .allCards {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
+
   
   .cards {
     border: 0.5px solid #e8e8e6;

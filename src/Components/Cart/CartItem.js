@@ -1,4 +1,4 @@
-import data from "../../Components/Shop/data";
+/*import data from "../../Components/Shop/data";
 import { useDispatch } from "react-redux";
 import { removeItemFromCart, decreaseCart, increaseCart } from '../../Redux/cartSlice.js';
 
@@ -33,3 +33,4 @@ const dispatch = useDispatch();
 
 export default CartItem;
     
+*/
