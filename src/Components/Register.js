@@ -19,18 +19,18 @@ const Register = ({ handleRegister }) => {
   };
 
   return (
-    <div>
-      <h1>Registration Form</h1>
+    <div className="App form">
+      <h3>Registration Form</h3>
       <form onSubmit={handleSubmit}>
         <div>
-          <label>Email</label>
-          <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+          <label className="footerBtn">Email</label>
+          <input className="text-input" type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
         </div>
         <div>
-          <label>Password</label>
-          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+          <label className="footerBtn">Password</label>
+          <input className="text-input" type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
         </div>
-        <button type="submit">Register</button>
+        <button className="btnLogin" type="submit">Register</button>
       </form>
       <p>
         Already have an account? <Link to="/login">Login</Link>

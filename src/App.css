@@ -103,6 +103,36 @@ body {
   p, h4 {
     font-family: 'Montserrat', sans-serif;
   }
+
+  /*login*/
+
+  .text-input {
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+    display: flex;
+    width: 300px;
+    justify-content: center;
+    border: dotted 0.5px #252421;
+    font-family: 'Poiret One', cursive;
+    background-color:rgba(234, 235, 230, 0.08);
+    box-shadow: 0px 5px 5px rgba(255,255,255, 0.37);
+}
+
+.btnLogin {
+  border: 0.5px solid #e8e8e6;
+    color: #676765;
+    padding: 3px;
+    background-color: transparent;
+    text-align: center;
+    width: 150px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btnLogin:hover {
+  background-color: #e8e8e6;
+}
   
   /*Footer(App.js) - Contacts - ContactForm*/
   .footer {

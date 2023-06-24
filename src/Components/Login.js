@@ -19,18 +19,18 @@ const Login = ({ handleLogin }) => {
   };
 
   return (
-    <div>
-      <h1>Login Form</h1>
+    <div className="App form">
+      <h3>Login Form</h3>
       <form onSubmit={handleSubmit}>
         <div>
-          <label>Email</label>
-          <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+          <label className="footerBtn">Email</label>
+          <input className="text-input" type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
         </div>
         <div>
-          <label>Password</label>
-          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+          <label className="footerBtn">Password</label>
+          <input className="text-input" type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
         </div>
-        <button type="submit">Login</button>
+        <button className="btnLogin" type="submit">Login</button>
       </form>
       <p>
         Don't have an account? <Link to="/register">Register</Link>
