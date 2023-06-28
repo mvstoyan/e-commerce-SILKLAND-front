@@ -8,17 +8,17 @@ const CartItem = ({ cartItem, index }) => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    fetchProduct();
-  }, []);
+    const fetchProduct = async () => {
+      try {
+        const response = await axios.get(`https://e-commerce-silkland.onrender.com/api/v1/products/${cartItem.dressId}`);
+        setProduct(response.data.product);
+      } catch (error) {
+        console.error('Failed to fetch product:', error);
+      }
+    };
 
-  const fetchProduct = async () => {
-    try {
-      const response = await axios.get(`https://e-commerce-silkland.onrender.com/api/v1/products/${cartItem.dressId}`);
-      setProduct(response.data.product);
-    } catch (error) {
-      console.error('Failed to fetch product:', error);
-    }
-  };
+    fetchProduct();
+  }, [cartItem.dressId]);
 
   if (!product) {
     return <p>Loading product...</p>;

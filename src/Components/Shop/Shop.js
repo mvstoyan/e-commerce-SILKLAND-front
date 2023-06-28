@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { getSelectedCategory, filterCategory } from '../../Redux/dressesSlice';
+import { useSelector } from 'react-redux';
+import { getSelectedCategory } from '../../Redux/dressesSlice';
 import axios from 'axios';
 import Filter from './Filter';
 import Dress from './Dress';
@@ -9,6 +9,8 @@ const Shop = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
+
+  const selectedCategory = useSelector(getSelectedCategory);
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -32,13 +34,6 @@ const Shop = () => {
   if (error) {
     return <p>{error}</p>;
   }
-
-  return <ShopContent products={products} />;
-};
-
-const ShopContent = ({ products }) => {
-  const selectedCategory = useSelector(getSelectedCategory);
-  const dispatch = useDispatch();
 
   return (
     <div className="shop">
