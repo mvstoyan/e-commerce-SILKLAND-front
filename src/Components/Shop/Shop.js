@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { getSelectedCategory, filterCategory } from '../../Redux/dressesSlice';
 import axios from 'axios';
 import Filter from './Filter';
 import Dress from './Dress';
@@ -9,19 +11,19 @@ const Shop = () => {
   const [error, setError] = useState('');
 
   useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const response = await axios.get('https://e-commerce-silkland.onrender.com/api/v1/products');
+        setProducts(response.data.products);
+        setLoading(false);
+      } catch (error) {
+        setError('Failed to fetch products');
+        setLoading(false);
+      }
+    };
+
     fetchProducts();
   }, []);
-
-  const fetchProducts = async () => {
-    try {
-      const response = await axios.get('https://e-commerce-silkland.onrender.com/api/v1/products');
-      setProducts(response.data.products);
-      setLoading(false);
-    } catch (error) {
-      setError('Failed to fetch products');
-      setLoading(false);
-    }
-  };
 
   if (loading) {
     return <p>Loading...</p>;
@@ -31,13 +33,20 @@ const Shop = () => {
     return <p>{error}</p>;
   }
 
+  return <ShopContent products={products} />;
+};
+
+const ShopContent = ({ products }) => {
+  const selectedCategory = useSelector(getSelectedCategory);
+  const dispatch = useDispatch();
+
   return (
     <div className="shop">
-      <Filter />
+      <Filter category={selectedCategory} />
       <div className="allCards">
-      {products.map((product) => (
-        <Dress key={product.id} dress={product} />
-      ))}
+        {products.map((product) => (
+          <Dress key={product.id} dress={product} />
+        ))}
       </div>
     </div>
   );

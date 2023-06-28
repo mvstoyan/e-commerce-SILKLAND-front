@@ -1,20 +1,29 @@
-import { useDispatch, useSelector } from "react-redux";
-import { getSelectedCategory, filterCategory } from "../../Redux/dressesSlice";
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { filterCategory, getSelectedCategory } from '../../Redux/dressesSlice';
 
-const Filter = ({category}) => {
-const selectedCategory =useSelector(getSelectedCategory);
-const dispatch = useDispatch();
+const Filter = () => {
+  const selectedCategory = useSelector(getSelectedCategory);
+  const dispatch = useDispatch();
 
-    return (
-        <div className="filters">
-            {['floral', 'abstract', 'all'].map(category =>
-                <div key={category.toString()}>
-                    <button onClick={() => {dispatch(filterCategory(category))}} className={selectedCategory === category ? 'categoryButtonSelected categoryButton' : 'categoryButton' }>{category}</button>
-                </div>
-            )
-        }
+  const handleFilter = (category) => {
+    dispatch(filterCategory(category));
+  };
+
+  return (
+    <div className="filters">
+      {['floral', 'abstract', 'all'].map((category) => (
+        <div key={category}>
+          <button
+            onClick={() => handleFilter(category)}
+            className={selectedCategory === category ? 'categoryButtonSelected categoryButton' : 'categoryButton'}
+          >
+            {category}
+          </button>
         </div>
-    )
-}
+      ))}
+    </div>
+  );
+};
 
 export default Filter;
