@@ -16,7 +16,13 @@ const Shop = () => {
     const fetchProducts = async () => {
       try {
         const response = await axios.get('https://e-commerce-silkland.onrender.com/api/v1/products');
-        setProducts(response.data.products);
+        let filteredProducts = response.data.products;
+
+        if (selectedCategory !== 'all') {
+          filteredProducts = filteredProducts.filter((product) => product.category === selectedCategory);
+        }
+
+        setProducts(filteredProducts);
         setLoading(false);
       } catch (error) {
         setError('Failed to fetch products');
@@ -25,7 +31,7 @@ const Shop = () => {
     };
 
     fetchProducts();
-  }, []);
+  }, [selectedCategory]);
 
   if (loading) {
     return <p>Loading...</p>;
@@ -37,7 +43,7 @@ const Shop = () => {
 
   return (
     <div className="shop">
-      <Filter category={selectedCategory} />
+      <Filter />
       <div className="allCards">
         {products.map((product) => (
           <Dress key={product.id} dress={product} />
