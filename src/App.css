@@ -522,7 +522,7 @@ h4 {
   .footerInput,
   .footerBtn,
   .footerInput::placeholder {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .footer-container {
