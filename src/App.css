@@ -46,17 +46,6 @@ body {
   border: none;
 }
 
-/*
-  video {
-      object-fit: cover;
-      width: 100vw;
-      height: 100vh;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: -1;
-  }
-  */
 
 /*SILKLAND PAGE*/
 .SILKLAND {
@@ -113,7 +102,6 @@ h4 {
   width: 300px;
   justify-content: center;
   border: dotted 0.5px #252421;
-  font-family: 'Poiret One', cursive;
   background-color: rgba(234, 235, 230, 0.08);
   box-shadow: 0px 5px 5px rgba(255, 255, 255, 0.37);
 }
@@ -274,7 +262,7 @@ h4 {
   align-items: center;
   margin-bottom: 20px;
   width: 330px;
-  height: 550px;
+  height: 570px;
 }
 
 .slider {
