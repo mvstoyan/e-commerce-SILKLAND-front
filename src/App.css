@@ -60,6 +60,7 @@ body {
 
 .floral {
   width: 400px;
+  height: auto;
 }
 
 .btn {
@@ -490,6 +491,7 @@ h4 {
 
   .floral {
     width: 200px;
+    height: auto;
   }
 
   .btn {
