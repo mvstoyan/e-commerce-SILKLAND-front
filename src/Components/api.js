@@ -1,25 +1,26 @@
-const rootUrl = 'https://e-commerce-silkland.onrender.com';
+const rootUrl = "https://e-commerce-silkland.onrender.com";
 
+// Function to handle user registration
 export const handleRegister = async (user) => {
   try {
-    const url = `${rootUrl}/api/v1/auth/register`;
+    const url = `${rootUrl}/api/v1/auth/register`; // API endpoint for user registration
     const response = await fetch(url, {
-      method: 'POST',
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
-      body: JSON.stringify(user),
+      body: JSON.stringify(user), // Converts the user object to JSON and sends it as the request body
     });
 
     if (response.ok) {
-      console.log('Registration successful');
-      return true;
+      console.log("Registration successful"); // If the response is successful (status 200-299), log a success message
+      return true; // Return true to indicate successful registration
     } else {
-      console.log('Registration failed');
-      return false;
+      console.log("Registration failed"); // If the response is not successful, log a failure message
+      return false; // Return false to indicate failed registration
     }
   } catch (error) {
-    console.log(error);
+    console.log(error); // Log any errors that occur during the registration process
     return false;
   }
 };
@@ -28,18 +29,18 @@ export const handleLogin = async (user) => {
   try {
     const url = `${rootUrl}/api/v1/auth/login`;
     const response = await fetch(url, {
-      method: 'POST',
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
       body: JSON.stringify(user),
     });
 
     if (response.ok) {
-      console.log('Login successful');
+      console.log("Login successful");
       return true;
     } else {
-      console.log('Login failed');
+      console.log("Login failed");
       return false;
     }
   } catch (error) {
@@ -54,10 +55,10 @@ export const handleLogout = async () => {
     const response = await fetch(url);
 
     if (response.ok) {
-      console.log('Logout successful');
+      console.log("Logout successful");
       return true;
     } else {
-      console.log('Logout failed');
+      console.log("Logout failed");
       return false;
     }
   } catch (error) {
